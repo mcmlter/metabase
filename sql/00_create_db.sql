@@ -1,8 +1,8 @@
--- Database: lter_core_metabase
+-- Database: metabase
 
--- DROP DATABASE lter_core_metabase;
+-- DROP DATABASE metabase;
 
-CREATE DATABASE lter_core_metabase
+CREATE DATABASE metabase
     WITH 
     OWNER = %db_owner% -- You must substitute the username before running this.
     ENCODING = 'UTF8'
