@@ -75,25 +75,6 @@ COMMENT ON SCHEMA pkg_mgmt IS 'Contains tables for internal data package invento
 
 
 --
--- TOC entry 3 (class 2615 OID 2200)
--- Name: public; Type: SCHEMA; Schema: -; Owner: postgres
---
-
-CREATE SCHEMA public;
-
-
-ALTER SCHEMA public OWNER TO postgres;
-
---
--- TOC entry 3500 (class 0 OID 0)
--- Dependencies: 3
--- Name: SCHEMA public; Type: COMMENT; Schema: -; Owner: postgres
---
-
-COMMENT ON SCHEMA public IS 'standard public schema';
-
-
---
 -- TOC entry 285 (class 1255 OID 112009)
 -- Name: update_modified_column(); Type: FUNCTION; Schema: pkg_mgmt; Owner: mcmlter
 --
