@@ -6201,8 +6201,8 @@ ALTER TABLE ONLY pkg_mgmt.pkg_sort
 -- Name: SCHEMA lter_metabase; Type: ACL; Schema: -; Owner: mcmlter
 --
 
-GRANT USAGE ON SCHEMA lter_metabase TO read_write_user;
-GRANT USAGE ON SCHEMA lter_metabase TO read_only_user;
+GRANT USAGE ON SCHEMA lter_metabase TO rw_user;
+GRANT USAGE ON SCHEMA lter_metabase TO ro_user;
 
 
 --
@@ -6211,8 +6211,8 @@ GRANT USAGE ON SCHEMA lter_metabase TO read_only_user;
 -- Name: SCHEMA mb2eml_r; Type: ACL; Schema: -; Owner: mcmlter
 --
 
-GRANT USAGE ON SCHEMA mb2eml_r TO read_write_user;
-GRANT USAGE ON SCHEMA mb2eml_r TO read_only_user;
+GRANT USAGE ON SCHEMA mb2eml_r TO rw_user;
+GRANT USAGE ON SCHEMA mb2eml_r TO ro_user;
 
 
 --
@@ -6221,8 +6221,8 @@ GRANT USAGE ON SCHEMA mb2eml_r TO read_only_user;
 -- Name: SCHEMA pkg_mgmt; Type: ACL; Schema: -; Owner: mcmlter
 --
 
-GRANT USAGE ON SCHEMA pkg_mgmt TO read_write_user;
-GRANT USAGE ON SCHEMA pkg_mgmt TO read_only_user;
+GRANT USAGE ON SCHEMA pkg_mgmt TO rw_user;
+GRANT USAGE ON SCHEMA pkg_mgmt TO ro_user;
 
 
 --
@@ -6231,8 +6231,8 @@ GRANT USAGE ON SCHEMA pkg_mgmt TO read_only_user;
 -- Name: TABLE "DataSet"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSet" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."DataSet" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSet" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."DataSet" TO ro_user;
 
 
 --
@@ -6241,8 +6241,8 @@ GRANT SELECT ON TABLE lter_metabase."DataSet" TO read_only_user;
 -- Name: TABLE "DataSetAnnotation"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetAnnotation" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."DataSetAnnotation" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetAnnotation" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."DataSetAnnotation" TO ro_user;
 
 
 --
@@ -6251,8 +6251,8 @@ GRANT SELECT ON TABLE lter_metabase."DataSetAnnotation" TO read_only_user;
 -- Name: TABLE "DataSetAttributeAnnotation"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetAttributeAnnotation" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."DataSetAttributeAnnotation" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetAttributeAnnotation" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."DataSetAttributeAnnotation" TO ro_user;
 
 
 --
@@ -6261,8 +6261,8 @@ GRANT SELECT ON TABLE lter_metabase."DataSetAttributeAnnotation" TO read_only_us
 -- Name: TABLE "DataSetAttributeEnumeration"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetAttributeEnumeration" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."DataSetAttributeEnumeration" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetAttributeEnumeration" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."DataSetAttributeEnumeration" TO ro_user;
 
 
 --
@@ -6271,7 +6271,7 @@ GRANT SELECT ON TABLE lter_metabase."DataSetAttributeEnumeration" TO read_only_u
 -- Name: TABLE "DataSetAttributeMissingCodes"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT ON TABLE lter_metabase."DataSetAttributeMissingCodes" TO read_only_user;
+GRANT SELECT ON TABLE lter_metabase."DataSetAttributeMissingCodes" TO ro_user;
 
 
 --
@@ -6280,8 +6280,8 @@ GRANT SELECT ON TABLE lter_metabase."DataSetAttributeMissingCodes" TO read_only_
 -- Name: TABLE "DataSetAttributes"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetAttributes" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."DataSetAttributes" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetAttributes" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."DataSetAttributes" TO ro_user;
 
 
 --
@@ -6290,8 +6290,8 @@ GRANT SELECT ON TABLE lter_metabase."DataSetAttributes" TO read_only_user;
 -- Name: TABLE "DataSetEntities"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetEntities" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."DataSetEntities" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetEntities" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."DataSetEntities" TO ro_user;
 
 
 --
@@ -6300,8 +6300,8 @@ GRANT SELECT ON TABLE lter_metabase."DataSetEntities" TO read_only_user;
 -- Name: TABLE "DataSetKeywords"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetKeywords" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."DataSetKeywords" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetKeywords" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."DataSetKeywords" TO ro_user;
 
 
 --
@@ -6310,8 +6310,8 @@ GRANT SELECT ON TABLE lter_metabase."DataSetKeywords" TO read_only_user;
 -- Name: TABLE "DataSetMethod"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetMethod" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."DataSetMethod" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetMethod" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."DataSetMethod" TO ro_user;
 
 
 --
@@ -6320,8 +6320,8 @@ GRANT SELECT ON TABLE lter_metabase."DataSetMethod" TO read_only_user;
 -- Name: TABLE "DataSetMethodInstruments"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetMethodInstruments" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."DataSetMethodInstruments" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetMethodInstruments" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."DataSetMethodInstruments" TO ro_user;
 
 
 --
@@ -6330,8 +6330,8 @@ GRANT SELECT ON TABLE lter_metabase."DataSetMethodInstruments" TO read_only_user
 -- Name: TABLE "DataSetMethodProtocols"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetMethodProtocols" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."DataSetMethodProtocols" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetMethodProtocols" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."DataSetMethodProtocols" TO ro_user;
 
 
 --
@@ -6340,8 +6340,8 @@ GRANT SELECT ON TABLE lter_metabase."DataSetMethodProtocols" TO read_only_user;
 -- Name: TABLE "DataSetMethodProvenance"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT ON TABLE lter_metabase."DataSetMethodProvenance" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."DataSetMethodProvenance" TO read_only_user;
+GRANT SELECT ON TABLE lter_metabase."DataSetMethodProvenance" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."DataSetMethodProvenance" TO ro_user;
 
 
 --
@@ -6350,8 +6350,8 @@ GRANT SELECT ON TABLE lter_metabase."DataSetMethodProvenance" TO read_only_user;
 -- Name: TABLE "DataSetMethodSoftware"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetMethodSoftware" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."DataSetMethodSoftware" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetMethodSoftware" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."DataSetMethodSoftware" TO ro_user;
 
 
 --
@@ -6360,8 +6360,8 @@ GRANT SELECT ON TABLE lter_metabase."DataSetMethodSoftware" TO read_only_user;
 -- Name: TABLE "DataSetPersonnel"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetPersonnel" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."DataSetPersonnel" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetPersonnel" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."DataSetPersonnel" TO ro_user;
 
 
 --
@@ -6370,8 +6370,8 @@ GRANT SELECT ON TABLE lter_metabase."DataSetPersonnel" TO read_only_user;
 -- Name: TABLE "DataSetPublications"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetPublications" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."DataSetPublications" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetPublications" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."DataSetPublications" TO ro_user;
 
 
 --
@@ -6380,8 +6380,8 @@ GRANT SELECT ON TABLE lter_metabase."DataSetPublications" TO read_only_user;
 -- Name: TABLE "DataSetSites"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetSites" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."DataSetSites" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetSites" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."DataSetSites" TO ro_user;
 
 
 --
@@ -6390,8 +6390,8 @@ GRANT SELECT ON TABLE lter_metabase."DataSetSites" TO read_only_user;
 -- Name: TABLE "DataSetTaxa"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetTaxa" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."DataSetTaxa" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetTaxa" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."DataSetTaxa" TO ro_user;
 
 
 --
@@ -6400,8 +6400,8 @@ GRANT SELECT ON TABLE lter_metabase."DataSetTaxa" TO read_only_user;
 -- Name: TABLE "DataSetTemporal"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetTemporal" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."DataSetTemporal" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."DataSetTemporal" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."DataSetTemporal" TO ro_user;
 
 
 --
@@ -6410,8 +6410,8 @@ GRANT SELECT ON TABLE lter_metabase."DataSetTemporal" TO read_only_user;
 -- Name: TABLE "EMLFileTypes"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."EMLFileTypes" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."EMLFileTypes" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."EMLFileTypes" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."EMLFileTypes" TO ro_user;
 
 
 --
@@ -6420,8 +6420,8 @@ GRANT SELECT ON TABLE lter_metabase."EMLFileTypes" TO read_only_user;
 -- Name: TABLE "EMLKeywordTypes"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."EMLKeywordTypes" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."EMLKeywordTypes" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."EMLKeywordTypes" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."EMLKeywordTypes" TO ro_user;
 
 
 --
@@ -6430,8 +6430,8 @@ GRANT SELECT ON TABLE lter_metabase."EMLKeywordTypes" TO read_only_user;
 -- Name: TABLE "EMLMeasurementScaleDomains"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."EMLMeasurementScaleDomains" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."EMLMeasurementScaleDomains" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."EMLMeasurementScaleDomains" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."EMLMeasurementScaleDomains" TO ro_user;
 
 
 --
@@ -6440,8 +6440,8 @@ GRANT SELECT ON TABLE lter_metabase."EMLMeasurementScaleDomains" TO read_only_us
 -- Name: TABLE "EMLMeasurementScales"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."EMLMeasurementScales" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."EMLMeasurementScales" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."EMLMeasurementScales" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."EMLMeasurementScales" TO ro_user;
 
 
 --
@@ -6450,8 +6450,8 @@ GRANT SELECT ON TABLE lter_metabase."EMLMeasurementScales" TO read_only_user;
 -- Name: TABLE "EMLNumberTypes"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."EMLNumberTypes" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."EMLNumberTypes" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."EMLNumberTypes" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."EMLNumberTypes" TO ro_user;
 
 
 --
@@ -6460,8 +6460,8 @@ GRANT SELECT ON TABLE lter_metabase."EMLNumberTypes" TO read_only_user;
 -- Name: TABLE "EMLObjectProperties"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."EMLObjectProperties" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."EMLObjectProperties" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."EMLObjectProperties" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."EMLObjectProperties" TO ro_user;
 
 
 --
@@ -6470,8 +6470,8 @@ GRANT SELECT ON TABLE lter_metabase."EMLObjectProperties" TO read_only_user;
 -- Name: TABLE "EMLStorageTypes"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."EMLStorageTypes" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."EMLStorageTypes" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."EMLStorageTypes" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."EMLStorageTypes" TO ro_user;
 
 
 --
@@ -6480,8 +6480,8 @@ GRANT SELECT ON TABLE lter_metabase."EMLStorageTypes" TO read_only_user;
 -- Name: TABLE "EMLUnitDictionary"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."EMLUnitDictionary" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."EMLUnitDictionary" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."EMLUnitDictionary" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."EMLUnitDictionary" TO ro_user;
 
 
 --
@@ -6490,8 +6490,8 @@ GRANT SELECT ON TABLE lter_metabase."EMLUnitDictionary" TO read_only_user;
 -- Name: TABLE "EMLUnitTypes"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."EMLUnitTypes" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."EMLUnitTypes" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."EMLUnitTypes" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."EMLUnitTypes" TO ro_user;
 
 
 --
@@ -6500,8 +6500,8 @@ GRANT SELECT ON TABLE lter_metabase."EMLUnitTypes" TO read_only_user;
 -- Name: TABLE "ListCodes"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListCodes" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."ListCodes" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListCodes" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."ListCodes" TO ro_user;
 
 
 --
@@ -6510,8 +6510,8 @@ GRANT SELECT ON TABLE lter_metabase."ListCodes" TO read_only_user;
 -- Name: TABLE "ListKeywordThesauri"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListKeywordThesauri" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."ListKeywordThesauri" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListKeywordThesauri" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."ListKeywordThesauri" TO ro_user;
 
 
 --
@@ -6520,8 +6520,8 @@ GRANT SELECT ON TABLE lter_metabase."ListKeywordThesauri" TO read_only_user;
 -- Name: TABLE "ListKeywords"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListKeywords" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."ListKeywords" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListKeywords" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."ListKeywords" TO ro_user;
 
 
 --
@@ -6530,8 +6530,8 @@ GRANT SELECT ON TABLE lter_metabase."ListKeywords" TO read_only_user;
 -- Name: TABLE "ListMethodInstruments"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListMethodInstruments" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."ListMethodInstruments" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListMethodInstruments" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."ListMethodInstruments" TO ro_user;
 
 
 --
@@ -6540,8 +6540,8 @@ GRANT SELECT ON TABLE lter_metabase."ListMethodInstruments" TO read_only_user;
 -- Name: TABLE "ListMethodProtocols"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListMethodProtocols" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."ListMethodProtocols" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListMethodProtocols" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."ListMethodProtocols" TO ro_user;
 
 
 --
@@ -6550,8 +6550,8 @@ GRANT SELECT ON TABLE lter_metabase."ListMethodProtocols" TO read_only_user;
 -- Name: TABLE "ListMethodSoftware"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListMethodSoftware" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."ListMethodSoftware" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListMethodSoftware" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."ListMethodSoftware" TO ro_user;
 
 
 --
@@ -6560,8 +6560,8 @@ GRANT SELECT ON TABLE lter_metabase."ListMethodSoftware" TO read_only_user;
 -- Name: TABLE "ListPeople"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListPeople" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."ListPeople" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListPeople" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."ListPeople" TO ro_user;
 
 
 --
@@ -6570,8 +6570,8 @@ GRANT SELECT ON TABLE lter_metabase."ListPeople" TO read_only_user;
 -- Name: TABLE "ListPeopleID"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListPeopleID" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."ListPeopleID" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListPeopleID" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."ListPeopleID" TO ro_user;
 
 
 --
@@ -6580,8 +6580,8 @@ GRANT SELECT ON TABLE lter_metabase."ListPeopleID" TO read_only_user;
 -- Name: TABLE "ListPublications"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListPublications" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."ListPublications" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListPublications" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."ListPublications" TO ro_user;
 
 
 --
@@ -6590,8 +6590,8 @@ GRANT SELECT ON TABLE lter_metabase."ListPublications" TO read_only_user;
 -- Name: TABLE "ListSemanticAnnotationTerms"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListSemanticAnnotationTerms" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."ListSemanticAnnotationTerms" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListSemanticAnnotationTerms" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."ListSemanticAnnotationTerms" TO ro_user;
 
 
 --
@@ -6600,8 +6600,8 @@ GRANT SELECT ON TABLE lter_metabase."ListSemanticAnnotationTerms" TO read_only_u
 -- Name: TABLE "ListSites"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListSites" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."ListSites" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListSites" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."ListSites" TO ro_user;
 
 
 --
@@ -6610,8 +6610,8 @@ GRANT SELECT ON TABLE lter_metabase."ListSites" TO read_only_user;
 -- Name: TABLE "ListTaxa"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListTaxa" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."ListTaxa" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListTaxa" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."ListTaxa" TO ro_user;
 
 
 --
@@ -6620,8 +6620,8 @@ GRANT SELECT ON TABLE lter_metabase."ListTaxa" TO read_only_user;
 -- Name: TABLE "ListTaxonomicProviders"; Type: ACL; Schema: lter_metabase; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListTaxonomicProviders" TO read_write_user;
-GRANT SELECT ON TABLE lter_metabase."ListTaxonomicProviders" TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE lter_metabase."ListTaxonomicProviders" TO rw_user;
+GRANT SELECT ON TABLE lter_metabase."ListTaxonomicProviders" TO ro_user;
 
 
 --
@@ -6630,8 +6630,8 @@ GRANT SELECT ON TABLE lter_metabase."ListTaxonomicProviders" TO read_only_user;
 -- Name: TABLE boilerplate; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.boilerplate TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.boilerplate TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.boilerplate TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.boilerplate TO ro_user;
 
 
 --
@@ -6640,8 +6640,8 @@ GRANT SELECT ON TABLE mb2eml_r.boilerplate TO read_only_user;
 -- Name: TABLE vw_custom_units; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_custom_units TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_custom_units TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_custom_units TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_custom_units TO ro_user;
 
 
 --
@@ -6650,8 +6650,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_custom_units TO read_only_user;
 -- Name: TABLE vw_eml_associatedparty; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_associatedparty TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_associatedparty TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_associatedparty TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_associatedparty TO ro_user;
 
 
 --
@@ -6660,8 +6660,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_associatedparty TO read_only_user;
 -- Name: TABLE vw_eml_attributecodedefinition; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_attributecodedefinition TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_attributecodedefinition TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_attributecodedefinition TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_attributecodedefinition TO ro_user;
 
 
 --
@@ -6670,8 +6670,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_attributecodedefinition TO read_only_user;
 -- Name: TABLE vw_eml_attributes; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_attributes TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_attributes TO read_only_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_attributes TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_attributes TO ro_user;
 
 
 --
@@ -6680,8 +6680,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_attributes TO read_only_user;
 -- Name: TABLE vw_eml_boilerplate; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_boilerplate TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_boilerplate TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_boilerplate TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_boilerplate TO ro_user;
 
 
 --
@@ -6690,8 +6690,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_boilerplate TO read_only_user;
 -- Name: TABLE vw_eml_bp_people; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_bp_people TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_bp_people TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_bp_people TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_bp_people TO ro_user;
 
 
 --
@@ -6700,8 +6700,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_bp_people TO read_only_user;
 -- Name: TABLE maintenance_changehistory; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.maintenance_changehistory TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.maintenance_changehistory TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.maintenance_changehistory TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.maintenance_changehistory TO ro_user;
 
 
 --
@@ -6710,8 +6710,8 @@ GRANT SELECT ON TABLE pkg_mgmt.maintenance_changehistory TO read_only_user;
 -- Name: TABLE vw_eml_changehistory; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_changehistory TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_changehistory TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_changehistory TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_changehistory TO ro_user;
 
 
 --
@@ -6720,8 +6720,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_changehistory TO read_only_user;
 -- Name: TABLE vw_eml_creator; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_creator TO read_only_user;
-GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_creator TO read_write_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_creator TO ro_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_creator TO rw_user;
 
 
 --
@@ -6730,8 +6730,8 @@ GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_creator TO read_write_user;
 -- Name: TABLE vw_eml_dataset; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_dataset TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_dataset TO read_only_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_dataset TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_dataset TO ro_user;
 
 
 --
@@ -6740,8 +6740,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_dataset TO read_only_user;
 -- Name: TABLE vw_eml_entities; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_entities TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_entities TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_entities TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_entities TO ro_user;
 
 
 --
@@ -6750,8 +6750,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_entities TO read_only_user;
 -- Name: TABLE vw_eml_geographiccoverage; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_geographiccoverage TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_geographiccoverage TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_geographiccoverage TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_geographiccoverage TO ro_user;
 
 
 --
@@ -6760,8 +6760,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_geographiccoverage TO read_only_user;
 -- Name: TABLE vw_eml_instruments; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_instruments TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_instruments TO read_only_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_instruments TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_instruments TO ro_user;
 
 
 --
@@ -6770,8 +6770,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_instruments TO read_only_user;
 -- Name: TABLE vw_eml_keyword; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_keyword TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_keyword TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_keyword TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_keyword TO ro_user;
 
 
 --
@@ -6780,8 +6780,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_keyword TO read_only_user;
 -- Name: TABLE vw_eml_methodstep_description; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_methodstep_description TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_methodstep_description TO read_only_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_methodstep_description TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_methodstep_description TO ro_user;
 
 
 --
@@ -6790,8 +6790,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_methodstep_description TO read_only_user;
 -- Name: TABLE vw_eml_missingcodes; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_missingcodes TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_missingcodes TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_missingcodes TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_missingcodes TO ro_user;
 
 
 --
@@ -6800,8 +6800,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_missingcodes TO read_only_user;
 -- Name: TABLE vw_eml_protocols; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_protocols TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_protocols TO read_only_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_protocols TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_protocols TO ro_user;
 
 
 --
@@ -6810,8 +6810,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_protocols TO read_only_user;
 -- Name: TABLE vw_eml_provenance; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_provenance TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_provenance TO read_only_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_provenance TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_provenance TO ro_user;
 
 
 --
@@ -6820,8 +6820,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_provenance TO read_only_user;
 -- Name: TABLE vw_eml_publications; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_publications TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_publications TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_publications TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_publications TO ro_user;
 
 
 --
@@ -6830,8 +6830,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_publications TO read_only_user;
 -- Name: TABLE vw_eml_semantic_annotation; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_semantic_annotation TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_semantic_annotation TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_semantic_annotation TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_semantic_annotation TO ro_user;
 
 
 --
@@ -6840,8 +6840,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_semantic_annotation TO read_only_user;
 -- Name: TABLE vw_eml_software; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_software TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_software TO read_only_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_software TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_software TO ro_user;
 
 
 --
@@ -6850,8 +6850,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_software TO read_only_user;
 -- Name: TABLE vw_eml_taxonomy; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_taxonomy TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_taxonomy TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_taxonomy TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_taxonomy TO ro_user;
 
 
 --
@@ -6860,8 +6860,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_taxonomy TO read_only_user;
 -- Name: TABLE vw_eml_temporalcoverage; Type: ACL; Schema: mb2eml_r; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_temporalcoverage TO read_write_user;
-GRANT SELECT ON TABLE mb2eml_r.vw_eml_temporalcoverage TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE mb2eml_r.vw_eml_temporalcoverage TO rw_user;
+GRANT SELECT ON TABLE mb2eml_r.vw_eml_temporalcoverage TO ro_user;
 
 
 --
@@ -6870,8 +6870,8 @@ GRANT SELECT ON TABLE mb2eml_r.vw_eml_temporalcoverage TO read_only_user;
 -- Name: TABLE cv_cra; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.cv_cra TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.cv_cra TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.cv_cra TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.cv_cra TO ro_user;
 
 
 --
@@ -6880,8 +6880,8 @@ GRANT SELECT ON TABLE pkg_mgmt.cv_cra TO read_only_user;
 -- Name: TABLE cv_maint_freq; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.cv_maint_freq TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.cv_maint_freq TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.cv_maint_freq TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.cv_maint_freq TO ro_user;
 
 
 --
@@ -6890,8 +6890,8 @@ GRANT SELECT ON TABLE pkg_mgmt.cv_maint_freq TO read_only_user;
 -- Name: TABLE cv_mgmt_type; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.cv_mgmt_type TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.cv_mgmt_type TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.cv_mgmt_type TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.cv_mgmt_type TO ro_user;
 
 
 --
@@ -6900,8 +6900,8 @@ GRANT SELECT ON TABLE pkg_mgmt.cv_mgmt_type TO read_only_user;
 -- Name: TABLE cv_network_type; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.cv_network_type TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.cv_network_type TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.cv_network_type TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.cv_network_type TO ro_user;
 
 
 --
@@ -6910,8 +6910,8 @@ GRANT SELECT ON TABLE pkg_mgmt.cv_network_type TO read_only_user;
 -- Name: TABLE cv_spatial_extent; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.cv_spatial_extent TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.cv_spatial_extent TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.cv_spatial_extent TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.cv_spatial_extent TO ro_user;
 
 
 --
@@ -6920,8 +6920,8 @@ GRANT SELECT ON TABLE pkg_mgmt.cv_spatial_extent TO read_only_user;
 -- Name: TABLE cv_spatial_type; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.cv_spatial_type TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.cv_spatial_type TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.cv_spatial_type TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.cv_spatial_type TO ro_user;
 
 
 --
@@ -6930,8 +6930,8 @@ GRANT SELECT ON TABLE pkg_mgmt.cv_spatial_type TO read_only_user;
 -- Name: TABLE cv_spatio_temporal; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.cv_spatio_temporal TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.cv_spatio_temporal TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.cv_spatio_temporal TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.cv_spatio_temporal TO ro_user;
 
 
 --
@@ -6940,8 +6940,8 @@ GRANT SELECT ON TABLE pkg_mgmt.cv_spatio_temporal TO read_only_user;
 -- Name: TABLE cv_status; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.cv_status TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.cv_status TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.cv_status TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.cv_status TO ro_user;
 
 
 --
@@ -6950,8 +6950,8 @@ GRANT SELECT ON TABLE pkg_mgmt.cv_status TO read_only_user;
 -- Name: TABLE cv_temporal_type; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.cv_temporal_type TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.cv_temporal_type TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.cv_temporal_type TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.cv_temporal_type TO ro_user;
 
 
 --
@@ -6960,8 +6960,8 @@ GRANT SELECT ON TABLE pkg_mgmt.cv_temporal_type TO read_only_user;
 -- Name: TABLE pkg_core_area; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.pkg_core_area TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.pkg_core_area TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.pkg_core_area TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.pkg_core_area TO ro_user;
 
 
 --
@@ -6970,8 +6970,8 @@ GRANT SELECT ON TABLE pkg_mgmt.pkg_core_area TO read_only_user;
 -- Name: TABLE pkg_sort; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.pkg_sort TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.pkg_sort TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.pkg_sort TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.pkg_sort TO ro_user;
 
 
 --
@@ -6980,8 +6980,8 @@ GRANT SELECT ON TABLE pkg_mgmt.pkg_sort TO read_only_user;
 -- Name: TABLE pkg_state; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.pkg_state TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.pkg_state TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.pkg_state TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.pkg_state TO ro_user;
 
 
 --
@@ -6990,8 +6990,8 @@ GRANT SELECT ON TABLE pkg_mgmt.pkg_state TO read_only_user;
 -- Name: TABLE version_tracker_metabase; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT ON TABLE pkg_mgmt.version_tracker_metabase TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.version_tracker_metabase TO read_only_user;
+GRANT SELECT ON TABLE pkg_mgmt.version_tracker_metabase TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.version_tracker_metabase TO ro_user;
 
 
 --
@@ -7000,8 +7000,8 @@ GRANT SELECT ON TABLE pkg_mgmt.version_tracker_metabase TO read_only_user;
 -- Name: TABLE vw_backlog; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.vw_backlog TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.vw_backlog TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.vw_backlog TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.vw_backlog TO ro_user;
 
 
 --
@@ -7010,8 +7010,8 @@ GRANT SELECT ON TABLE pkg_mgmt.vw_backlog TO read_only_user;
 -- Name: TABLE vw_cataloged; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.vw_cataloged TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.vw_cataloged TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.vw_cataloged TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.vw_cataloged TO ro_user;
 
 
 --
@@ -7020,8 +7020,8 @@ GRANT SELECT ON TABLE pkg_mgmt.vw_cataloged TO read_only_user;
 -- Name: TABLE vw_draft_anticipated; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.vw_draft_anticipated TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.vw_draft_anticipated TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.vw_draft_anticipated TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.vw_draft_anticipated TO ro_user;
 
 
 --
@@ -7030,8 +7030,8 @@ GRANT SELECT ON TABLE pkg_mgmt.vw_draft_anticipated TO read_only_user;
 -- Name: TABLE vw_drafts_bak; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.vw_drafts_bak TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.vw_drafts_bak TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.vw_drafts_bak TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.vw_drafts_bak TO ro_user;
 
 
 --
@@ -7040,8 +7040,8 @@ GRANT SELECT ON TABLE pkg_mgmt.vw_drafts_bak TO read_only_user;
 -- Name: TABLE vw_im_plan; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.vw_im_plan TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.vw_im_plan TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.vw_im_plan TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.vw_im_plan TO ro_user;
 
 
 --
@@ -7050,8 +7050,8 @@ GRANT SELECT ON TABLE pkg_mgmt.vw_im_plan TO read_only_user;
 -- Name: TABLE vw_pub; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.vw_pub TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.vw_pub TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.vw_pub TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.vw_pub TO ro_user;
 
 
 --
@@ -7060,8 +7060,8 @@ GRANT SELECT ON TABLE pkg_mgmt.vw_pub TO read_only_user;
 -- Name: TABLE vw_self; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.vw_self TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.vw_self TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.vw_self TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.vw_self TO ro_user;
 
 
 --
@@ -7070,8 +7070,8 @@ GRANT SELECT ON TABLE pkg_mgmt.vw_self TO read_only_user;
 -- Name: TABLE vw_temporal; Type: ACL; Schema: pkg_mgmt; Owner: mcmlter
 --
 
-GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.vw_temporal TO read_write_user;
-GRANT SELECT ON TABLE pkg_mgmt.vw_temporal TO read_only_user;
+GRANT SELECT,INSERT,UPDATE ON TABLE pkg_mgmt.vw_temporal TO rw_user;
+GRANT SELECT ON TABLE pkg_mgmt.vw_temporal TO ro_user;
 
 
 -- Completed on 2023-04-05 14:26:20
